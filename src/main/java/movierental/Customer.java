@@ -21,7 +21,7 @@ public class Customer {
     }
 
     public double calculateAmount(Rental rental) {
-        return rental.getMovie().getCharge(rental.getDaysRented());
+        return rental.getChargeRental();
     }
 
     public int calculateFrequentRenterPoints(Rental rental){
