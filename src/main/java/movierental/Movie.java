@@ -1,7 +1,8 @@
 package movierental;
 
 public class Movie {
-
+    //Reference pour la classe Price
+    Price _price;
     public static final int CHILDRENS = 2;
     public static final int NEW_RELEASE = 1;
     public static final int REGULAR = 0;
@@ -16,6 +17,10 @@ public class Movie {
 
     public int getPriceCode() {
         return _priceCode;
+    }
+
+    public double getCharge(int daysRented) {
+        return _price.getCharge(daysRented);
     }
 
     public void setPriceCode(int arg) {
