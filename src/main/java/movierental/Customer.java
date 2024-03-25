@@ -25,7 +25,7 @@ public class Customer {
     }
 
     public int calculateFrequentRenterPoints(Rental rental){
-        if ((rental.getMovie().getPriceCode() == Movie.NEW_RELEASE) && rental.getDaysRented() > 1){
+        if ((rental.getMovie().getPrice() instanceof NewReleasePrice) && rental.getDaysRented() > 1){
             return 2;
         }
         return 1;
