@@ -31,6 +31,13 @@ public class CustomerTest {
         assertEquals(2.0, rental.getChargeRental());
     }
     @Test
+    public void test_calculate_frequent_for_new_release_price() {
+        //Given, When
+        Rental rental = new Rental(new Movie("Jaws", new NewReleasePrice()), 2);
+        //Then
+        assertEquals(6, rental.getChargeRental());
+    }
+    @Test
     public void test_new_release_price() {
         //Given
         Customer customer = new Customer("Bob");
