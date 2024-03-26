@@ -12,7 +12,6 @@ public class Rental {
         _movie = movie;
         _daysRented = daysRented;
     }
-
     public int getDaysRented() {
         return _daysRented;
     }

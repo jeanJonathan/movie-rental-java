@@ -24,6 +24,13 @@ public class CustomerTest {
         assertEquals(expected, customer.statement());
     }
     @Test
+    public void test_calculate_amount_for_regularMovie() {
+        //Given, When
+        Rental rental = new Rental(new Movie("Jaws", new RegularPrice()), 2);
+        //Then
+        assertEquals(2.0, rental.getChargeRental());
+    }
+    @Test
     public void test_new_release_price() {
         //Given
         Customer customer = new Customer("Bob");
