@@ -35,7 +35,7 @@ public class CustomerTest {
         //Given, When
         Rental rental = new Rental(new Movie("Jaws", new NewReleasePrice()), 2);
         //Then
-        assertEquals(6, rental.getChargeRental());
+        assertEquals(6.0, rental.getChargeRental());
     }
     @Test
     public void test_new_release_price() {
