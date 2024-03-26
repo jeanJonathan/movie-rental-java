@@ -11,7 +11,7 @@ public class RentalTest extends TestCase {
 
     public void test_GetMovie() {
         Rental rental = new Rental(new Movie("Jaws", new RegularPrice()), 2);
-        assertEquals("Jaws",rental.getMovie());
+        assertEquals("Jaws",rental.getMovie().getTitle());
     }
 
     public void test_GetChargeRental_for_() {
