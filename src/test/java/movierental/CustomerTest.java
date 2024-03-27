@@ -8,7 +8,7 @@ public class CustomerTest {
 
     @Test
     public void test_regular_price() {
-        //Githen
+        //Given
         Customer customer = new Customer("Bob");
         customer.addRental(new Rental(new Movie("Jaws", new RegularPrice()), 2));
         customer.addRental(new Rental(new Movie("Golden Eye", new RegularPrice()), 3));
